@@ -22,13 +22,14 @@ Asegúrate de tener instalado:
   spring.datasource.username=johan
   spring.datasource.password=root
   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-  # Clave secreta JWT
+  
+  Clave secreta JWT
   app.jwt.secret=FfTMpA3jYf/ec1e0hsedJ16JkrpFVanwuXSK1/45qPk=
   
   spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
   spring.jpa.hibernate.ddl-auto=update
   
-  # Configuración del servidor
+  Configuración del servidor
   server.port=8080
 
    ```
@@ -39,7 +40,7 @@ Asegúrate de tener instalado:
    mvn spring-boot:run
    ```
 
-4. Para el registro de usuarios Acceder en: [http://localhost:8080/register]
+4. Para el registro de usuarios Acceder en: [http://localhost:8080/register](http://localhost:8080/register)
 
 ---
 
