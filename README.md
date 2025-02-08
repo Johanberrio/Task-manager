@@ -16,8 +16,8 @@ Asegúrate de tener instalado:
    cd task-manager
    ```
 
-2. Configura la base de datos en `src/main/resources/application.properties`:
-   ```properties
+2. Configura la base de datos en src/main/resources/application.properties:
+   ```sh
   spring.datasource.url=jdbc:mysql://localhost:3306/task_manager
   spring.datasource.username=johan
   spring.datasource.password=root
@@ -31,7 +31,6 @@ Asegúrate de tener instalado:
   
   Configuración del servidor
   server.port=8080
-
    ```
 
 3. Compilar y ejecutar la aplicación backend:
@@ -40,7 +39,11 @@ Asegúrate de tener instalado:
    mvn spring-boot:run
    ```
 
-4. Para el registro de usuarios Acceder en: [http://localhost:8080/register](http://localhost:8080/register)
+4. Para el registro de usuarios Acceder en: [http://localhost:3000/register](http://localhost:3000/register)
+
+---
+
+5. Para el Login de usuarios Acceder en: [http://localhost:3000](http://localhost:3000)
 
 ---
 
