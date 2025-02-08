@@ -64,6 +64,9 @@ Asegurarse de tener instalado:
 
 9. Para el Login de usuarios Acceder en: [http://localhost:3000](http://localhost:3000)
 
+10. Para la documentación en swagger acceder en: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.htm)
+
+
 ---
 
 ## 🛠️ Diseño y Decisiones Técnicas
