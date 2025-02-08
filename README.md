@@ -3,7 +3,7 @@
 ## 📌 Instrucciones de Ejecución
 
 ### 🔧 Requisitos Previos
-Asegúrate de tener instalado:
+Asegurarse de tener instalado:
 - **Java 17 o superior**
 - **Maven 3.x**
 - **MySQL** 
@@ -18,19 +18,19 @@ Asegúrate de tener instalado:
 
 2. Configura la base de datos en src/main/resources/application.properties:
    ```sh
-  spring.datasource.url=jdbc:mysql://localhost:3306/task_manager
-  spring.datasource.username=johan
-  spring.datasource.password=root
-  spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+   spring.datasource.url=jdbc:mysql://localhost:3306/task_manager
+   spring.datasource.username=johan
+   spring.datasource.password=root
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
   
-  Clave secreta JWT
-  app.jwt.secret=FfTMpA3jYf/ec1e0hsedJ16JkrpFVanwuXSK1/45qPk=
+   Clave secreta JWT
+   app.jwt.secret=FfTMpA3jYf/ec1e0hsedJ16JkrpFVanwuXSK1/45qPk=
   
-  spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
-  spring.jpa.hibernate.ddl-auto=update
+   spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+   spring.jpa.hibernate.ddl-auto=update
   
-  Configuración del servidor
-  server.port=8080
+   Configuración del servidor
+   server.port=8080
    ```
 
 3. Compilar y ejecutar la aplicación backend:
@@ -41,7 +41,6 @@ Asegúrate de tener instalado:
 
 4. Para el registro de usuarios Acceder en: [http://localhost:3000/register](http://localhost:3000/register)
 
----
 
 5. Para el Login de usuarios Acceder en: [http://localhost:3000](http://localhost:3000)
 
