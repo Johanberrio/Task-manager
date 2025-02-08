@@ -6,6 +6,7 @@
 Asegurarse de tener instalado:
 - **Java 17 o superior**
 - **Maven 3.x**
+- **Node.js 16+ y npm (para el frontend)**
 - **MySQL** 
 - **H2** (para pruebas en memoria)
 
@@ -16,7 +17,12 @@ Asegurarse de tener instalado:
    cd task-manager
    ```
 
-2. Configura la base de datos en src/main/resources/application.properties:
+2. Crear una base de datos en MYSQL:
+   ```sh
+   CREATE DATABASE task_manager;
+   ```
+   
+3. Configurar la base de datos en src/main/resources/application.properties:
    ```sh
    spring.datasource.url=jdbc:mysql://localhost:3306/task_manager
    spring.datasource.username=johan
@@ -33,16 +39,30 @@ Asegurarse de tener instalado:
    server.port=8080
    ```
 
-3. Compilar y ejecutar la aplicación backend:
+4. Compilar y ejecutar la aplicación backend:
    ```sh
    mvn clean install
    mvn spring-boot:run
    ```
+   
+5. Acceder al directorio del Frontend:
+   ```sh
+   cd frontend
+   ```
+   
+6. Instalar las dependencias:
+   ```sh
+   npm install
+   ```
+7. Ejecutar la aplicación:
+   ```sh
+   npm run dev
+   ```
+   
+8. Para el registro de usuarios Acceder en: [http://localhost:3000/register](http://localhost:3000/register)
 
-4. Para el registro de usuarios Acceder en: [http://localhost:3000/register](http://localhost:3000/register)
 
-
-5. Para el Login de usuarios Acceder en: [http://localhost:3000](http://localhost:3000)
+9. Para el Login de usuarios Acceder en: [http://localhost:3000](http://localhost:3000)
 
 ---
 
