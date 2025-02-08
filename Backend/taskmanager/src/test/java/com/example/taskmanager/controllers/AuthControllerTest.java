@@ -19,6 +19,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
+
 @ExtendWith(MockitoExtension.class)
 class AuthControllerTest {
 
@@ -46,7 +47,6 @@ class AuthControllerTest {
     @Test
     void testRegisterUser_Success() {
         when(userService.findByUsername("testUser")).thenReturn(Optional.empty());
-        doNothing().when(userService).saveUser(testUser);
 
         ResponseEntity<?> response = authController.register(testUser);
 

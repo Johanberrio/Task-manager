@@ -28,13 +28,13 @@ import java.util.Optional;
 public class AuthController {
 
     @Autowired
-    private JwtService jwtService;
+    private final JwtService jwtService;
 
     private final UserService userService;
     private final PasswordEncoder passwordEncoder;
     
 
-    public AuthController(UserService userService, PasswordEncoder passwordEncoder) {
+    public AuthController(UserService userService, PasswordEncoder passwordEncoder, JwtService jwtService) {
         this.userService = userService;
         this.passwordEncoder = passwordEncoder;
         this.jwtService = jwtService;

@@ -12,6 +12,7 @@ function Dashboard() {
     title: "",
     description: "",
     status: "pendiente",
+    dueDate: "",
     priority: "media",
   });
 
@@ -95,7 +96,7 @@ function Dashboard() {
         setTasks([...tasks, savedTask]);
       }
 
-      setNewTask({ title: "", description: "", status: "pendiente", priority: "media" });
+      setNewTask({ title: "", description: "", dueDate: "", status: "pendiente", priority: "media" });
     } catch (error) {
       console.error("Error al guardar la tarea:", error);
     }
@@ -200,6 +201,7 @@ function Dashboard() {
             <th>ID</th>
             <th>Título</th>
             <th>Descripción</th>
+            <th>Due Date</th>
             <th>Estado</th>
             <th>Prioridad</th>
           </tr>
@@ -210,6 +212,7 @@ function Dashboard() {
               <td>{task.id}</td>
               <td>{task.title}</td>
               <td>{task.description}</td>
+              <td>{task.dueDate}</td>
               <td>{task.status}</td>
               <td>{task.priority}</td>
               <td>
